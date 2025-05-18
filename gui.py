@@ -53,62 +53,6 @@ class Gui:
     def getListOfWinFrame(self):
         return self.listOfWinFrame
 
-    # def browseWindow(self):
-    #     #global mriImage
-    #     FILEOPENOPTIONS = dict(defaultextension='*.*',
-    #                            filetypes=[('jpg', '*.jpg'), ('png', '*.png'), ('jpeg', '*.jpeg'), ('All Files', '*.*')])
-    #     self.fileName = filedialog.askopenfilename(**FILEOPENOPTIONS)
-    #     image = Image.open(self.fileName)
-    #     imageName = str(self.fileName)
-    #     mriImage = cv.imread(imageName, 1)
-    #     self.listOfWinFrame[0].readImage(image)
-    #     self.listOfWinFrame[0].displayImage()
-
-    #     self.DT.readImage(image)
-
-    # def check(self):
-    #     global mriImage
-    #     #print(mriImage)
-    #     if (self.val.get() == 1):
-    #         self.listOfWinFrame = 0
-    #         self.listOfWinFrame = list()
-    #         self.listOfWinFrame.append(self.FirstFrame)
-
-    #         self.listOfWinFrame[0].setCallObject(self.DT)
-
-    #         res = predictTumor(mriImage)
-            
-    #         if res > 0.5:
-    #             resLabel = tkinter.Label(self.FirstFrame.getFrames(), text="Tumor Detected", height=1, width=20)
-    #             resLabel.configure(background="White", font=("Comic Sans MS", 16, "bold"), fg="red")
-    #         else:
-    #             resLabel = tkinter.Label(self.FirstFrame.getFrames(), text="No Tumor", height=1, width=20)
-    #             resLabel.configure(background="White", font=("Comic Sans MS", 16, "bold"), fg="green")
-
-    #         resLabel.place(x=700, y=450)
-
-    #     elif (self.val.get() == 2):
-    #         self.listOfWinFrame = 0
-    #         self.listOfWinFrame = list()
-    #         self.listOfWinFrame.append(self.FirstFrame)
-
-    #         self.listOfWinFrame[0].setCallObject(self.DT)
-    #         self.listOfWinFrame[0].setMethod(self.DT.removeNoise)
-    #         secFrame = Frames(self, MainWindow, self.wWidth, self.wHeight, self.DT.displayTumor, self.DT)
-
-    #         self.listOfWinFrame.append(secFrame)
-
-
-    #         for i in range(len(self.listOfWinFrame)):
-    #             if (i != 0):
-    #                 self.listOfWinFrame[i].hide()
-    #         self.listOfWinFrame[0].unhide()
-
-    #         if (len(self.listOfWinFrame) > 1):
-    #             self.listOfWinFrame[0].btnView['state'] = 'active'
-
-    #     else:
-    #         print("Not Working")
 
     def browseWindow(self):
         FILEOPENOPTIONS = dict(
